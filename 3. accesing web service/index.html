@@ -27,9 +27,10 @@
         GET Request
       </div>
       <div class="card-body">
-        <a href="#" class="btn btn-primary">Obtener todo</a>
-        <a href="#" class="btn btn-danger">limpiar</a>
+        <button href="#" id="performGetRequestGet" class="btn btn-primary">Obtener todo</button> <!-- boton accion -->
+        <button href="#" class="btn btn-danger" onclick="limpiarSalida()">limpiar</button>
       </div>
+      <div class="card-body" id="getResultGetRequest"></div> <!-- SALIDA -->
     </div>
 
     <div class="card my-3">
@@ -38,11 +39,12 @@
       </div>
       <div class="card-body">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Ingresa el parametro"></input>
+          <input type="text" id="todoId" class="form-control" placeholder="Ingresa el parametro"></input>
         </div>
-        <a href="#" class="btn btn-primary">Obtener</a>
-        <a href="#" class="btn btn-danger">limpiar</a>
+        <button href="#" id="performGetRequestOne" class="btn btn-primary">Obtener</button> <!-- boton accion -->
+        <button href="#" class="btn btn-danger" onclick="limpiarSalida()">limpiar</button>
       </div>
+      <div class="card-body" id="getResultGetRequest"></div> <!-- salida -->
     </div>
 
     <div class="card my-3">
@@ -52,12 +54,13 @@
       <div class="card-body">
         <form class="form-group">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="todo title">
+            <input type="text" id="todoTitle" class="form-control" placeholder="todo title">
           </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-          <button href="#" class="btn btn-danger">limpiar</button>
+          <button type="submit" id="performGetRequestPost" class="btn btn-primary">Enviar</button> <!-- boton accion -->
+          <button href="#" class="btn btn-danger" onclick="limpiarSalida()">limpiar</button>
         </form>
       </div>
+      <div class="card-body" id="getResultPost"></div> <!-- salida -->
     </div>
 
   </div>
