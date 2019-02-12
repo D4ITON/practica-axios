@@ -1,55 +1,87 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    
-    <div class="container">
-      <h1>Axios demo</h1>
-       <!-- jumbotron  -->
-      <div class="jumbotron">
-          <h1>Bienvenido a Axios</h1>
-          <h4>Esta aplicación usa Axios. Axios es un cliente HTTP basado en promesas para JavaScript.</h4>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
+    integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- jumbotron  -->
+    <div class="jumbotron">
+      <h1 class="display-4">Bienvenido a Axios</h1>
+      <p class="lead">Esta aplicación usa Axios. Axios es un cliente HTTP basado en promesas para JavaScript.</p>
+    </div>
+    <!-- cards  -->
+    <div class="card my-3">
+      <div class="card-header">
+        GET Request
       </div>
-      <!-- cards  -->
-      <div class="card text-white bg-primary">
-        <div class="card-header">
-          Featured
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        <div class="card-footer text-muted">
-          2 days ago
-        </div>
+      <div class="card-body">
+        <a href="#" class="btn btn-primary">Obtener todo</a>
+        <a href="#" class="btn btn-danger">limpiar</a>
       </div>
-
-
     </div>
 
+    <div class="card my-3">
+      <div class="card-header">
+        GET Request with parametros
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Ingresa el parametro"></input>
+        </div>
+        <a href="#" class="btn btn-primary">Obtener</a>
+        <a href="#" class="btn btn-danger">limpiar</a>
+      </div>
+    </div>
+
+    <div class="card my-3">
+      <div class="card-header">
+        POST Request
+      </div>
+      <div class="card-body">
+        <form class="form-group">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="todo title">
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button href="#" class="btn btn-danger">limpiar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
 
 
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
+    integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+    crossorigin="anonymous"></script>
 
-    <script src="main.js"></script>
-  </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script src="main.js"></script>
+</body>
+
 </html>
