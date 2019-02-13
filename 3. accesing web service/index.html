@@ -30,7 +30,7 @@
         <button href="#" id="performGetRequestGet" class="btn btn-primary">Obtener todo</button> <!-- boton accion -->
         <button href="#" class="btn btn-danger" onclick="limpiarSalida()">limpiar</button>
       </div>
-      <div class="card-body" id="getResultGetRequest"></div> <!-- SALIDA -->
+      <div class="card-body" id="getResultGetRequestAll"></div> <!-- SALIDA -->
     </div>
 
     <div class="card my-3">
@@ -44,7 +44,7 @@
         <button href="#" id="performGetRequestOne" class="btn btn-primary">Obtener</button> <!-- boton accion -->
         <button href="#" class="btn btn-danger" onclick="limpiarSalida()">limpiar</button>
       </div>
-      <div class="card-body" id="getResultGetRequest"></div> <!-- salida -->
+      <div class="card-body" id="getResultGetRequestOne"></div> <!-- salida -->
     </div>
 
     <div class="card my-3">
@@ -52,7 +52,7 @@
         POST Request
       </div>
       <div class="card-body">
-        <form class="form-group">
+        <form class="form-group" id="todoInputForm">
           <div class="form-group">
             <input type="text" id="todoTitle" class="form-control" placeholder="todo title">
           </div>
@@ -85,6 +85,7 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
   <script src="main.js"></script>
+
 </body>
 
 </html>
